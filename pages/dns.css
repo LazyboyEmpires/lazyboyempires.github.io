@@ -5,15 +5,61 @@
 	font-family: 'Open Sans', serif;
 }
 
-a.content-more {
-    display: block;
-    color: #fff;
-    text-decoration: none;
+h1.content-title-mini{
+	
+margin-left: 453px;
 }
 
-a.content-more:hover {
-    color: green;
+h1.content-title {margin-left: 470px;}
+
+
+th#gem3 {
+    border: 1px solid #fff;
 }
+
+th#gem2 {
+    border: 1px solid #fff;
+    border-right: 1px solid transparent;
+}
+
+th#gem1 {
+    border: 1px solid #fff;
+    border-right: 1px solid transparent;
+}
+
+i#yolo {
+    font-size: 30px;
+}
+
+a.spac {
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'open sans',serif;
+    text-decoration: none;
+    position: relative;
+}
+
+
+a.spac:hover {
+    background: black;
+    height: 82px;
+    color: #255784;
+    padding-top: 25px;
+    font-family: 'Tomatoes';
+    background: #2196f3;
+}
+
+
+
+table, th, td {
+    height: 82px;
+    width: 1012px;
+    margin-top: 44px;
+    margin-left: 66px;
+}
+
 
 ::-webkit-scrollbar {
     width: 14px;
