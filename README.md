@@ -1,2 +1,0 @@
-# lazyboyempires.github.io
-fontend
