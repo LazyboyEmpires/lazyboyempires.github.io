@@ -1,0 +1,102 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', serif;
+}
+
+a.content-more {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+a.content-more:hover {
+    color: green;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+    display: none;
+}
+
+.content-box {
+    margin-left: 271px;
+    line-height: 56px;
+}
+body{
+	background: #000;
+	min-height: 200vh;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.6s;
+	padding: 40px 100px;
+	z-index: 10000;
+}
+
+header.sticky {
+	padding: 5px 100px;
+	background: #fff;
+}
+header .logo {
+	position: relative;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+	font-family: 'Tomatoes';
+	letter-spacing: 2px;
+	transition: 0.6s;
+}
+
+header ul {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header ul li {
+	position: relative;
+	list-style: none;
+}
+
+header ul li a {
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 2px;
+	font-weight: 500px;
+	transition: 0.5s;
+}
+
+.banner {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url(image/rolex.jpg);
+	background-size: cover;
+}
+header.sticky .logo,
+header.sticky ul li a {
+	color: #000;
+}
+
+p {
+	color: #fff;
+	font-family: 'Open Sans',serif;
+}
+
+h1 {
+	color: #fff;
+	font-weight: 700;
+}
+
