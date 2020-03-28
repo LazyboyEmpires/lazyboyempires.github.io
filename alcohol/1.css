@@ -11,80 +11,6 @@
     padding-top: 24px;
 }
 
-.slide {
-    margin-top: -52px;
-}
-
-section{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-}
-
-section .slide{
-    position: relative;
-    background: #0f0;
-    height: 100%;
-    flex: 1;
-    border-right: 2px solid #000;
-    overflow: hidden;
-    transition: 0.5s ease-in-out;
-}
-
-section .slide:last-child{
-    border-right: none;
-}
-
-section .slide:hover{
-    flex-grow: 5;
-
-}
-
-section .slide:nth-child(1){
-    background: url(image/1.jpg);
-    background-position: center center;
-}
-
-section .slide:nth-child(2){
-    background: url(image/2.jpg);
-    background-position: center center;
-}
-
-section .slide:nth-child(3){
-    background: url(image/3.jpg);
-    background-position: center center;
-}
-
-section .slide:nth-child(4){
-    background: url(image/4.jpg);
-    background-position: center center;
-}
-
-section .slide:nth-child(5){
-    background: url(image/5.jpg);
-    background-position: center center;
-}
-
-section .slide .content{
-    position: absolute;
-    bottom: 0;
-    margin: 40px;
-    background: #000;
-    color: #fff;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0s
-    transform: translateY(100px);
-}
-
-section .slide:hover .content{
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s
-    transition-delay: 0.5;
-    transform: translateY(0);
-}
 .footer-bottom{
     width: 100%;
     height: auto;
@@ -328,235 +254,12 @@ section .slide:hover .content{
     background: #bd081c;
 }
 
-p {
-    font-size: 11px;
-    color: gray;
-    font-family: 'Open Sans';
-}
-
-h5 {
-    font-size: 23px;
-    font-family: 'Open Sans';
-    font-weight: 600;
-}
-
-a.services {
-    color: #5CE8CD;
-    font-size: 32px;
-    transition: 0.4s;
-    border-radius: 40%;
-    width: 40px;
-    height: 40px;
-}
-
-a.services:hover {
-    background: #2c3e50;
-    color: white;
-}
-
-
-.rightfour {
-    box-sizing: border-box;
-    width: 206px;
-    height: 100%;
-    background: #5CE8CD;
-    border-left: 22px solid transparent;
-    border-bottom: 16px solid #fff;
-    background-position: -100px -15px;
-}
-
-.leftfour {
-    box-sizing: border-box;
-    height: auto;
-    width: 811px;
-    background: #5CE8CD;
-}
-
-.boxfour {
-    position: relative;
-    box-sizing: border-box;
-    display: flex;
-    width: 501px;
-    height: 20px;
-    float: left;
-    background: #000;
-    border: 2px solid #5CE8CD;
-}
-
-section .four {
-    position: relative;
-    width: 570px;
-    height: 20px;
-    margin-top: 20px;
-}
-
-.rightthree {
-    box-sizing: border-box;
-    width: 0px;
-    height: 100%;
-    background: #5CE8CD;
-    border-left: 22px solid transparent;
-    border-bottom: 16px solid #fff;
-    background-position: -100px -15px;
-}
-
-.leftthree {
-    box-sizing: border-box;
-    height: auto;
-    width: 227px;
-    background: #5CE8CD;
-}
-
-.boxthree {
-    position: relative;
-    box-sizing: border-box;
-    display: flex;
-    width: 501px;
-    height: 20px;
-    float: left;
-    background: #fff;
-    border: 2px solid #5CE8CD;
-}
-
-section .three {
-    position: relative;
-    width: 570px;
-    height: 20px;
-    margin-top: 20px;
-}
-
-.righttwo {
-    box-sizing: border-box;
-    width: 22px;
-    height: 100%;
-    background: #5CE8CD;
-    border-left: 22px solid transparent;
-    border-bottom: 16px solid #fff;
-    background-position: -100px -15px;
-}
-
-.lefttwo {
-    box-sizing: border-box;
-    height: auto;
-    width: 194px;
-    background: #5CE8CD;
-}
-
-.boxtwo {
-    position: relative;
-    box-sizing: border-box;
-    display: flex;
-    width: 501px;
-    height: 20px;
-    float: left;
-    background: #fff;
-    border: 2px solid #5CE8CD;
-}
-
-section .two {
-    position: relative;
-    width: 570px;
-    height: 20px;
-    margin-top: 20px;
-}
-.rightone {
-    box-sizing: border-box;
-    width: 50%;
-    height: 100%;
-    background: #5CE8CD;
-    border-left: 22px solid transparent;
-    border-bottom: 16px solid #fff;
-    background-position: -100px -15px;
-}
-
-.leftone {
-    box-sizing: border-box;
-    height: auto;
-    width: 508px;
-    background: #5CE8CD;
-}
-
-.boxone {
-    position: relative;
-    box-sizing: border-box;
-    display: flex;
-    width: 501px;
-    height: 20px;
-    float: left;
-    background: #000;
-    border: 2px solid #5CE8CD;
-}
-
-section .one {
-    position: relative;
-    width: 570px;
-    height: 20px;
-    margin-top: 20px;
-}
-
 .d3 {font-family: 'open sans',serif;}
 
 .tiest {
     font-family: 'Playfair Display',serif;
 }
 
-.fourlineapprox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 74px;
-}
-
-.card {
-    position: relative;
-    margin: 20px 0;
-    width: 473px;
-    height: 387px;
-    background: #fff;
-    transform-style: preserve-3d;
-    transform: perspective(2000px);
-    transition: 1s;
-    box-shadow: inset 300px 0 50px rgba(0,0,0,.5);
-    border: 6px solid #5CE8CD;
-}
-
-.card .imgBox {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border: 1px solid #000;
-    box-sizing: border-box;
-    transform-origin: left;
-    z-index: 1;
-    transition: 1s;
-}
-
-.card:hover .imgBox {
-    transform: rotateY(-135deg);
-}
-
-.card .imgBox .img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card .details {
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-    padding: 20px;
-}
-
-.card:hover {
-    transform: perspective(200px) rotate(-10deg);
-    box-shadow: inset 20px 0 50px rgba(0,0,0,.5);
-    z-index: 1000;
-}
 
 .container {
     max-width: 1000px;
@@ -653,32 +356,6 @@ h4.viendo.chungan {
     font-family: 'open sans';
 }
 
-.chu {font-family: "open sans";font-size: 17px;font-weight: 100;}
-
-.conso {
-    width: 100%;
-    height: 293px;
-    border: 4px solid #5ce8cd;
-    text-align: center;
-    padding-top: 56px;
-    color: white;
-    margin-top: -27px;
-}
-
-.numbers {
-    border-top: dashed 2px #5ce8cd;
-    margin-top: 94px;
-    background: url(images/bg_number.jpg) repeat-x 0px 115px;
-    min-height: 500px;
-}
-
-.so {font-family: 'Playfair Display',serif;font-size: 61px;}
-
-_1sanpham img {
-}
-
-
-
 h1.vienxanh.text-center:after {content: "";width: 60px;height: 5px;background: #5ce8cd;position: absolute;top: 303px;left: 40%;}
 
 h1.vienxanh.text-center {
@@ -688,14 +365,6 @@ h1.vienxanh.text-center {
     margin-bottom: 113px;
 }
 
-a.nutselect.btn.btn-default {border: 0px;background: #141414;color: #5ce8cd;padding: 17px 24px;border-bottom: 4px solid #5ce8cd;font-weight: 400;font-size: 16px;transition: 0.5s;}
-
-a.nutselect.btn.btn-default:hover {
-    color: black;
-    background: #5ce8cd;
-    border-color: black;
-    animation: bounce 1s;
-}
 
 .noidung1cot {
     padding-top: 31px;
@@ -775,7 +444,7 @@ h2.vienxanh  {
 }
 
 
-.btn.btn-default.nuttrang, .nutxanh {
+.btn.btn-default.nuttrang {
     border-radius: 23px;
     font-size: 17px;
     padding: 5px 10px 3px 20px;
@@ -791,16 +460,6 @@ h2.vienxanh  {
 
 .d2 {
     font-size: 35px;
-}
-
-.textslide {
-    position: relative;
-    z-index: 2;
-    margin-top: 15px;
-    font-size: 25px;
-    font-family: segoe ui light;
-    color: #4b4646;
-    font-weight: bold;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -849,17 +508,9 @@ nav.navbar.navbar-default {
     border: 1px;
 }
 
-.numbers {
-    background: url(images/bg_number.jpg);
-    padding-top: 31px;
-}
 
 .tiest {
     padding-right: 42px;
-}
-
-.row.approx {
-    padding-left: 30px;
 }
 
 .headertren {
