@@ -3,14 +3,11 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Open Sans', serif;
+	line-height: 30px;
 }
 
-h1.content-title-mini{
-	
-margin-left: 453px;
-}
 
-h1.content-title {margin-left: 1px;}
+
 
 
 th#gem3 {
@@ -55,9 +52,7 @@ a.spac:hover {
 
 table, th, td {
     height: 82px;
-    width: 1012px;
-    margin-top: 44px;
-    margin-left: 66px;
+    width: 900px;
 }
 
 
@@ -66,10 +61,7 @@ table, th, td {
     display: none;
 }
 
-.content-box {
-    margin-left: 271px;
-    line-height: 56px;
-}
+
 body{
 	background: #000;
 	min-height: 200vh;
