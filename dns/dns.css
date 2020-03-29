@@ -6,6 +6,10 @@
 	line-height: 30px;
 }
 
+.content-img {
+    margin-left: -70px;
+}
+
 
 
 
@@ -53,6 +57,7 @@ a.spac:hover {
 table, th, td {
     height: 82px;
     width: 900px;
+    margin-left: -141px;
 }
 
 
