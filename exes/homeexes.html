@@ -6,25 +6,42 @@
     <title>My Exercises</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="vendor/css/bootstrap.css">
-
-    <script type="text/javascript" src="vendor/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link rel="stylesheet" href="homeexes.css">
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">LazyBoy</a>
-        <ul>
-            <li><a href="#">Domain name/Hosting</a></li>
-            <li><a href="#">HTML</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">JavaScript</a></li>
-        </ul>
-    </header>
-    <section class="banner"></section>
+    <div class="container">
+        <div class="container__item landing-page-container">
+            <div class="content-wrapper">
+            <header class="header">
+                <div class="menu-icon header__item">
+                    <span class="menu-icon__line"></span>
+                </div>
+                <h1 class="heading header__item">LazyBoy</h1>
 
-    <h1>Tổng hợp các Exercises của Nguyễn Minh Cường</h1>
+                <ul class="social-container.header__item">
+                    <li class="social__icon social__icon--fb"><a href="https://www.facebook.com/MonStrumEmpires" class="myface"><i class="fab fa-facebook"></i></a></li>
+
+                    <li class="social__icon social__icon--sc"><a href="https://soundcloud.com/discover" class="mysound"><i class="fab fa-soundcloud"></i></a></li>
+
+                    <li class="social__icon social__icon--in"><a href="https://www.instagram.com/" class="myIn"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </header>
+            <p class="coords">N 49° 16' 35.173" / W 0° 42' 11.30"</p>
+
+            <div class="ellipse-container">
+                <h2 class="greeting">Exercises</h2>
+                <div class="ellipse ellipse__outer--thin">
+                    <div class="ellipse ellipse__orbit"></div>
+                </div>
+
+                <div class="ellipse ellipse__outer--thick"></div>
+            </div>
+
+        </div>
+        </div>
+    </div>
+    <div class="content">
         <h2>CÁC CHƯƠNG BÀI TẬP</h2>
         <fieldset>
         <legend><h3>Chapter 4. CREATING A SIMPLE PAGE</h3></legend>
@@ -85,15 +102,7 @@
             <li><a href="https://lazyboyempires.github.io/exes/chapter%209/Exercise%209.4/9-4.html" target="_blank">Exercise 9.4 | labels and fieldsets</a></li>
         </ol>
         </fieldset>
-
-
-   
-    <script type="text/javascript">
-        window.addEventListener("scroll", function(){
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky",window.scrollY > 0);
-        })
-    </script>
+    </div>
 
 </body>
 </html>
