@@ -2,328 +2,47 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>WEB DESIGN</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="stylesheet" href="vendor/css/bootstrap.css">
-
-	<script type="text/javascript" src="vendor/js/bootstrap.js"></script>
-	<!-- load font goole -->
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-
-	<!-- link font playfair -->
-	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900'rel='stylesheet' type='text/css'>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/waypoint.min.js"></script>
-	<script type="text/javascript" src="1.js"></script>
+	<title>Home Page</title>
 	<link rel="stylesheet" href="1.css">
-	<link rel="stylesheet" href="vendor/css/animate.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 </head>
 <body>
-
-	<div class="headertren">
-	<nav class="navbar navbar-default" role="navigation">
-		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#"><img src="image/logo2.png" alt=""></a>
-			</div>
-	
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse navbar-ex1-collapse">
-				
-				
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Domain name/Hosting</a></li>
-					<li><a href="#">HTML</a></li>
-					<li><a href="#">CSS</a></li>
-					<li><a href="#">JavaScript</a></li>
-					
-				</ul>
-			</div><!-- /.navbar-collapse -->
-		</div> 
-	</nav> <!-- end menu -->
-	<!-- begin slide -->
-	<div class="container">
-		<div class="col-sm-12 textslide">
-			<div class="threelinetext">
-				<div class="d1">
-				              Welcome to <span class="xanh">LazyBoy Web page</span></div>
-				              <div class="d2">
-              LEARN WEB DESIGN</div>
-              
-			</div>
-			<div class="twonode">
-				<a href="https://lazyboyempires.github.io/exes/homeexes.html" class="btn btn-default nuttrang">My Exercises</a>
-				
-			</div>
-
-		</div>
+	<div class="nav-wrapper">
+		<nav>
+			<a href="pages/dns.html" class="hover-this"><span>Labs</span></a>
+			<a href="../exes/homeexes.html" class="hover-this"><span>Exercises</span></a>
+			<a href="#" class="hover-this"><span>CSS</span></a>
+			<a href="#" class="hover-this"><span>JavaScript</span></a>
+			<div class="cursor"></div>
+		</nav>
 	</div>
-	<!-- end slide -->
+<script>
+	(function (){
+		const link = document.querySelectorAll('nav > .hover-this');
+		const cursor = document.querySelector('.cursor');
 
-	</div>  <!-- end header -->
+		const animateit =function(e) {
+			const span = this.querySelector('span');
+			const { offsetX: x, offsetY: y } = e,
+			{ offsetWidth: width, offsetHeight: height } = this,
+			move = 25,
+			xMove = x / width * (move * 2) - move,
+			yMove = y / height * (move * 2) - move;
 
-	<!-- begin works -->
-		<div class="work">
-			<div class="container">
+			span.style.transform = `translate(${xMove}px, ${yMove}px)`; 
+			if (e.type === 'mouseleave') span.style.transform = '';
+		};
 
-				<div class="row tieudework text-center">
-					 <h4 class="viendo chungan">Domain name/Hosting</h2>	
-				</div>
+		const editCursor = e => {
+			const { clientX: x, clientY: y } = e;
+			cursor.style.left = x + 'px';
+			cursor.style.top = y + 'px';
+		};
 
-				<div class="row works">
+		link.forEach(b => b.addEventListener('mousemove', animateit));
+		link.forEach(b => b.addEventListener('mouseleave', animateit));
+		window.addEventListener('mousemove', editCursor);
 
-					<div class="col-sm-6">
-						<a href="https://lazyboyempires.github.io/dns/dns.html" class="_1sanpham">
-							<img src="images/1.jpg" alt="">
-							<span class="thongtinsanpham">
-								<h4 class="tensanpham">DNS</h4>
-								<div class="danhmucsanpham">Hiểu về DNS</div>
-							</span>
-						</a>
-					</div>
-
-					<div class="col-sm-6">
-						<a href="https://lazyboyempires.github.io/web%20server/webserver.html" class="_1sanpham">
-							<img src="images/2.jpg" alt="">
-							<span class="thongtinsanpham">
-								<h4 class="tensanpham">WEB SERVER</h4>
-								<div class="danhmucsanpham">Hiểu về Web server</div>
-							</span>
-						</a>
-					</div>
-
-					<div class="col-sm-6">
-						<a href="https://lazyboyempires.github.io/xampp/xampp.html" class="_1sanpham">
-							<img src="images/3.jpg" alt="">
-							<span class="thongtinsanpham">
-								<h4 class="tensanpham">XAMPP / WAMP</h4>
-								<div class="danhmucsanpham">Cài đặt và cấu hình XAMPP/WAMP</div>
-							</span>
-						</a>
-					</div>
-
-					<div class="col-sm-6">
-						<a href="https://lazyboyempires.github.io/hosting/host.html" class="_1sanpham">
-							<img src="images/4.jpg" alt="">
-							<span class="thongtinsanpham">
-								<h4 class="tensanpham">HOSTING</h4>
-								<div class="danhmucsanpham">Tìm hiểu về các loại hosting</div>
-							</span>
-						</a>
-					</div>
-
-				</div>	
-
-			</div>
-		</div>
-	<!-- end works -->
-	
-
-
-
- 	<!-- begin the team -->
- 	<div class="theteam">
-
- 		<div class="container">
- 			<div class="row">
- 				<div class="row tieudework text-center">
-					<h4 class="viendo chungan">Sign Up Domain / Hosting</h4>
-
- 				</div>
-
-			</div>
- 		
- 			<div class="row">
-
- 				<div class="col-sm-3">
- 					<a href="https://lazyboyempires.github.io/sign/signfree.html" class="_1sanpham _1team">
-							<img src="image/car.jpg" alt="">
-							<span class="thongtinsanpham">
-								<h4 class="tensanpham">FREE DOMAIN</h4>
-								<div class="danhmucsanpham">ĐĂNG KÝ TÊN MIỀN MIỄN PHÍ</div>
-							</span>
-						</a>
-				</div>
-
-				<div class="col-sm-3">
- 					<a href="https://lazyboyempires.github.io/paid/paid.html" class="_1sanpham _1team">
-							<img src="image/clow.jpg" alt="">
-							<span class="thongtinsanpham">
-								<h4 class="tensanpham">PAID DOMAIN</h4>
-								<div class="danhmucsanpham">Đăng ký tên miền có phí</div>
-							</span>
-						</a>
-				</div>
-
-				<div class="col-sm-3">
- 					<a href="https://lazyboyempires.github.io/webhosting/webhosting.html" class="_1sanpham _1team">
-							<img src="image/low.jpg" alt="">
-							<span class="thongtinsanpham">
-								<h4 class="tensanpham">WEB HOSTING</h4>
-								<div class="danhmucsanpham">Tìm hiểu một số thông tin liên quan đến web hosting</div>
-							</span>
-						</a>
-				</div>
-
-				<div class="col-sm-3">
- 					<a href="https://lazyboyempires.github.io/shared/shared.html" class="_1sanpham _1team">
-							<img src="image/ang.jpg" alt="">
-							<span class="thongtinsanpham">
-								<h4 class="tensanpham">FREE HOSTING</h4>
-								<div class="danhmucsanpham">Shared hosting miễn phí</div>
-							</span>
-						</a>
-				</div>
-
-
-
-			</div>
-
-		</div>
-	</div>	
- 		
-
- 	<!-- end the team -->
-
- 	<!-- begin footer -->
- 	<footer class="footer">
- 		<div class="container">
- 			<div class="footer-icons">
- 				<ul>
- 					<li><a href="https://www.facebook.com/MonStrumEmpires"><i class="fab fa-facebook"></i></a></li>
- 					<li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
- 					<li><a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a></li>
- 					<li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
- 					<li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
- 					<li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
- 					<li><a href="https://www.google.com/"><i class="fab fa-google-plus"></i></a></li>
- 					<li><a href="https://www.google.com/"><i class="fab fa-skype"></i></a></li>
- 					<li><a href="https://www.google.com/"><i class="fab fa-weixin"></i></a></li>
- 					<li><a href="https://www.pinterest.com/nguyenminhcuong2000/"><i class="fab fa-pinterest"></i></a></li>
- 				</ul>
- 			</div>
- 			<div class="footer-mid">
- 				<div class="row">
- 					<div class="col-lg-3 col-md-6 col-sm-12">
- 						<div class="footer-section-one">
- 							<div class="footer-heading"><h2>Contact Us</h2></div>
-
-	 						<div class="footer-contact-box">
-	 							<div class="footer-contact-icon"><i class="fa fa-map-marker"></i></div>
-	 							<div class="footer-contact-text">
-	 								<p>Address: 96 A Hùng Vương, Phường 11, Đà Lạt, Lâm Đồng </p>
-	 							</div>
-	 							<div class="clr"></div>
-	 						</div>
-
-	 						<div class="footer-contact-box">
-	 							<div class="footer-contact-icon"><i class="fas fa-phone"></i></div>
-	 							<div class="footer-contact-text">
-	 								<p><a href="tel:+84797303551">+84797303551</a></p>
-	 							</div>
-	 							<div class="clr"></div>
-	 						</div>
-
-	 						<div class="footer-contact-box">
-	 							<div class="footer-contact-icon"><i class="fas fa-fax"></i></div>
-	 							<div class="footer-contact-text">
-	 								<p><a href="fax:+84797303551">+84797303551</a></p>
-	 							</div>
-	 							<div class="clr"></div>
-	 						</div>
-
-	 						<div class="footer-contact-box">
-	 							<div class="footer-contact-icon"><i class="far fa-envelope"></i></div>
-	 							<div class="footer-contact-text">
-	 								<p><a href="mailto:info@gmail.com">nixsunsee@gmail.com</a></p>
-	 							</div>
-	 							<div class="clr"></div>
-	 						</div>
-
-	 						<div class="footer-contact-box">
-	 							<div class="footer-contact-icon"><i class="fas fa-globe-americas"></i></div>
-	 							<div class="footer-contact-text">
-	 								<p><a href="https://www.facebook.com/MonStrumEmpires">http://www.facebook.com</a></p>
-	 							</div>
-	 							<div class="clr"></div>
-	 						</div>
-
- 						</div>
-					</div>
- 					<div class="col-lg-3 col-md-6 col-sm-12">
- 						<div class="footer-section-two">
- 							<div class="footer-heading"><h2>Quick Link</h2></div>
- 							<div class="footer-link">
- 								<ul>
- 									<li><a href="#">Home</a></li>
- 									<li><a href="#">About Us</a></li>
- 									<li><a href="#">Web Services</a></li>
- 									<li><a href="#">Graphic Design</a></li>
- 									<li><a href="#">Web Marketing</a></li>
- 									<li><a href="#">Services</a></li>
- 									<li><a href="#">Training</a></li>
- 									<li><a href="#">Contact Us</a></li>
- 								</ul>
- 							</div>
- 						</div>
- 					</div>
- 					<div class="col-lg-3 col-md-6 col-sm-12">
- 						<div class="footer-section-three">
- 							<div class="footer-heading"><h2>Our Services</h2></div>
- 							<div class="footer-link">
- 								<ul>
- 									<li><a href="#">Linux Hosting</a></li>
- 									<li><a href="#">Windown Hosting</a></li>
- 									<li><a href="#">Domain Registration</a></li>
- 									<li><a href="#">SEO Promotion</a></li>
- 									<li><a href="#">Our Plans</a></li>
- 									<li><a href="#">Latest Offers</a></li>
- 									<li><a href="#">Sitemap</a></li>
- 									<li><a href="#">Website Maintenance</a></li>
- 								</ul>
- 							</div>
- 						</div>
- 					</div>
- 					<div class="col-lg-3 col-md-6 col-sm-12">
- 						<div class="footer-section-four">
- 							<div class="footer-heading"><h2>Get In Touch</h2></div>
- 							<div class="footer-form">
- 								<form method="post" action="#">
- 									<div class="footer-form-box">
- 										<input type="text" class="footer-form-style" placeholder="Name">
- 										<input type="text" class="footer-form-style" placeholder="Email">
- 										<input type="text" class="footer-form-style" placeholder="Phone Number">
- 										<input type="submit" class="footer-form-submit-style" value="SUBMIT">
- 									</div>
- 								</form>
- 							</div>
- 						</div>
- 					</div>
- 				</div>
- 			</div>
- 			<div class="footer-bottom">
- 				<div class="row text-center">
-					<a href="logofooter"><img src="image/logo2.png" alt=""></a>
- 					<div class="col-lg-12 col-md-12 col-sm-12">
- 						<p>Copyright 2020 <span class="xanh">LazyBoy's World</span> </p>
- 					</div>
- 				</div>
- 			</div>
- 		</div>
- 	</footer>
- 	<!-- end footer -->
-
-
-
+	})();
+</script>
 </body>
 </html>
