@@ -48,10 +48,12 @@ a.spac {
 a.spac:hover {
     background: black;
     height: 82px;
-    color: #255784;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     padding-top: 25px;
     font-family: 'Tomatoes';
-    background: #2196f3;
+    box-shadow: 0 0 60px 30px #fff, 
+        0 0 100px 60px #f0f, 
+        0 0 140px 90px #0ff;
 }
 
 
