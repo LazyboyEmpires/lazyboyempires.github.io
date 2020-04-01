@@ -6,16 +6,22 @@ html {
 	font-size: 62.5%;
 	width: 100%;
 	height: 100%;
+	background: #141414;
 }
 
 .content {
     width: 350px;
     margin: 0 610px;
+    background: #141414;
+}
+
+h2,h3 {
+	color: white;
 }
 
 ol li a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 ol li a:hover {
