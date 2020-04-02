@@ -37,13 +37,15 @@ ol li a:hover {
 }
 
 a.mysound {
-	color: #FF6E00;
+	color: #98B1BD;
+	font-size: 26px;
 }
 
-a.myface {color: #4B0082;}
+a.myface {color: #98B1BD;font-size: 20px;}
 
 a.myGit {
-	color: #24292E;
+	color: #98B1BD;
+	font-size: 23px;
 }
 
 li.social__icon.social__icon--in {
