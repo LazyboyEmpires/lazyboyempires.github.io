@@ -6,6 +6,11 @@
 	line-height: 56px;
 }
 
+
+::-webkit-scrollbar {
+	display: none;
+}
+
 .board {
     margin: 0 50px;
 }
