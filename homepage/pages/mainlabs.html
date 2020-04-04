@@ -2,95 +2,58 @@
 <html lang="en">
 <head>
       <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Main Labs</title>
       <link rel="stylesheet" href="../stylish/mainlabs.css">
-
-      <!-- Fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
-
-      <!-- Slick -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
-
-      <!-- icons -->
-      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+      <script src="https://unpkg.com/panzoom@8.7.3/dist/panzoom.min.js"></script>
 </head>
 <body>
-      <!-- Hi my name is LazyBoy; if you are watching this comment, those code of javascript is not mine checkout his channel on Youtube -->
-      <!-- https://www.youtube.com/channel/UCpOIUW62tnJTtpWFABxWZ8g -->
-      <div class="text-slider-wrapper">
-            <div class="text-slider">
-                  <div class="text-slide"><a href="dns.html"><h1>Hiểu về<br>DNS</h1></a></div>
-                  <div class="text-slide"><a href="host.html"><h1>Tìm hiểu về các loại<br>Web Hosting</h1></a></div>
-                  <div class="text-slide"><a href="paid.html"><h1>Đăng ký tên miền<br>Có phí</h1></a></div>
-                  <div class="text-slide"><a href="shared.html"><h1>Đăng ký tên miền<br>Miễn phí</h1></a></div>
-                  <div class="text-slide"><a href="signfree.html"><h1>Shared Hosting<br>Miễn phí</h1></a></div>
-                  <div class="text-slide"><a href="signpaid.html"><h1>Shared Hosting<br>Có Phí</h1></a></div>
-                  <div class="text-slide"><a href="webhosting.html"><h1>Thông số<br>Web Hosting</h1></a></div>
-                  <div class="text-slide"><a href="webserver.html"><h1>Hiểu về<br>Web Server</h1></a></div>
-                  <div class="text-slide"><a href="xampp.html"><h1>Cài đặt và cấu hình<br>XAMPP/WAMP</h1></a></div>
+      <div class="backa">
+            <a href="../1.html" class="lobby">Wanna Back ?</a>
+      </div>
+      <div class="header">
+            Welcome to Lazyboy's World
+            <h3>Click and slide to find more</h3>
+      </div>
+      <div class="container">
+            <div class="row">
+                  <a href="dns.html"><div class="block block-1"></div></a>
+                  <a href="host.html"><div class="block block-2"></div></a>
+                  <a href="paid.html"><div class="block block-3"></div></a>
+                  <a href="shared.html"><div class="block block-4"></div></a>
+                  <a href="signfree.html"><div class="block block-5"></div></a>
+                  <a href="signpaid.html"><div class="block block-6"></div></a>
+            </div>
+            <div class="row">
+                  <a href="signfree.html"><div class="block block-5"></div></a>
+                  <a href="signpaid.html"><div class="block block-6"></div></a>
+                  <a href="webhosting.html"><div class="block block-7"></div></a>
+                  <a href="webserver.html"><div class="block block-8"></div></a>
+                  <a href="dns.html"><div class="block block-1"></div></a>
+                  <a href="hosting.html"><div class="block block-2"></div></a>
+            </div>
+            <div class="row">
+                  <a href="dns.html"><div class="block block-1"></div></a>
+                  <a href="host.html"><div class="block block-2"></div></a>
+                  <a href="paid.html"><div class="block block-3"></div></a>
+                  <a href="shared.html"><div class="block block-4"></div></a>
+                  <a href="signfree.html"><div class="block block-5"></div></a>
+                  <a href="signpaid.html"><div class="block block-6"></div></a>
+            </div>
+            <div class="row">
+                  <a href="signfree.html"><div class="block block-5"></div></a>
+                  <a href="signpaid.html"><div class="block block-6"></div></a>
+                  <a href="webhosting.html"><div class="block block-7"></div></a>
+                  <a href="webserver.html"><div class="block block-8"></div></a>
+                  <a href="dns.html"><div class="block block-1"></div></a>
+                  <a href="hosting.html"><div class="block block-2"></div></a>
             </div>
       </div>
-
-      <div class="slider-control">
-            <div class="prev"><button type="button"><ion-icon name="arrow-back"></ion-icon></button></div>
-            <div class="next"><button type="button"><ion-icon name="arrow-forward"></ion-icon></button></div>
-      </div>
-
-      <div class="blocks">
-            <div class="block-1"></div>
-            <div class="block-2"></div>
-            <div class="block-3"></div>
-      </div>
-
-      <div class="overlay"></div>
-
-      <div class="image-slider">
-            <div class="image-slide" id="one" style="background: url(../image/domain.jpg) no-repeat 50% 50%; background-size: cover;"></div>
-            <div class="image-slide" id="two" style="background: url(../image/hosting.jpg) no-repeat 50% 50%; background-size: cover;"></div>
-            <div class="image-slide" id="three" style="background: url(../image/paid.png) no-repeat 50% 50%; background-size: cover;"></div>
-            <div class="image-slide" id="four" style="background: url(../image/shared.jpg) no-repeat 50% 50%; background-size: cover;"></div>
-            <div class="image-slide" id="five" style="background: url(../image/signfree.jpg) no-repeat 50% 50%; background-size: cover;"></div>
-            <div class="image-slide" id="five" style="background: url(../image/signpaid.jpg) no-repeat 50% 50%; background-size: cover;"></div>
-            <div class="image-slide" id="five" style="background: url(../image/webhosting.jpg) no-repeat 50% 50%; background-size: cover;"></div>
-            <div class="image-slide" id="five" style="background: url(../image/server.png) no-repeat 50% 50%; background-size: cover;"></div>
-            <div class="image-slide" id="five" style="background: url(../image/xampp.png) no-repeat 50% 50%; background-size: cover;"></div>
-      </div>
-      
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
-<script src="slick.js"></script>
-<script>
-
-var sickPrimary = {
-      autoplay: true,
-      autoplaySpeed: 2400,
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      speed: 1800,
-      cssEase: 'cubic-bezier(.84, 0, .08, .99)',
-      asNavFor: '.text-slider',
-      centerMode: true,
-      prevArrow: $('.prev'),
-      nextArrow: $('.next')
-}
-
-var sickSecondary = {
-      autoplay: true,
-      autoplaySpeed: 2400,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      speed: 1800,
-      cssEase: 'cubic-bezier(.84, 0, .08, .99)',
-      asNavFor: '.image-slider',
-      prevArrow: $('.prev'),
-      nextArrow: $('.next')
-}
-
-$('.image-slider').slick(sickPrimary);
-$('.text-slider').slick(sickSecondary);
-
-</script>
+      <script>
+            var element = document.querySelector(".container");
+            panzoom(element,{
+                  minZoom: 1,
+                  maxZoom: 1
+            })
+      </script>
 </body>
 </html>
