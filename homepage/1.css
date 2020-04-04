@@ -65,3 +65,25 @@ span {
         display: inline-block;
     }
 }
+
+h1, h2, h3 {
+    color: white;
+}
+
+.id {
+    display: flex;
+    justify-content: center;
+    cursor: none;
+}
+
+#cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    transition: 0.1s;
+    transform: translate(-50%.-50%);
+    border-radius: 50%;
+    pointer-events: none;
+}
