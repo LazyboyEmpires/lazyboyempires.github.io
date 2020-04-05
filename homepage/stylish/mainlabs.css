@@ -8,6 +8,10 @@ html, body {
       cursor: url("../image/cursor.png"),auto;
 }
 
+a {
+    cursor: url(../image/cursor.png), auto;
+}
+
 .backa {
       background: white;
       width: 100px;
@@ -16,6 +20,7 @@ html, body {
 a.lobby {
     color: #161616;
     text-decoration: none;
+    cursor: url("../image/cursor.png"),auto;
 }
 
 a.lobby:hover {
@@ -59,6 +64,7 @@ a.lobby:hover {
 .block:hover {
       filter: grayscale(0);
       opacity: 1;
+      cursor: url("../image/cursor.png"),auto;
 }
 
 .block-1 {
