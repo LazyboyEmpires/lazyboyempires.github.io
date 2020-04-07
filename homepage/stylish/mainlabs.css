@@ -7,9 +7,26 @@ html, body {
       overflow: hidden;
       cursor: url("../image/cursor.png"),auto;
 }
+.block p {
+      color: #fff;
+      animation: glow 4s ease-in-out infinite alternate;
+      display: flex;
+      justify-content: center;
+}
+
+@keyframes glow {
+      from {
+    text-shadow: 0 0 10px #DCDCDC, 0 0 20px #D3D3D3, 0 0 30px #C0C0C0, 0 0 40px #A9A9A9, 0 0 50px #808080, 0 0 60px #A9A9A9, 0 0 70px #C0C0C0;
+  }
+       to {
+    text-shadow: 0 0 20px #000000, 0 0 30px #2F4F4F, 0 0 40px #708090, 0 0 50px #778899, 0 0 60px #A9A9A9, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
 
 a {
     cursor: url(../image/cursor.png), auto;
+    text-decoration: none;
+    margin: 4em 8em;
 }
 
 .backa {
@@ -48,18 +65,25 @@ a.lobby:hover {
 .row {
       display: flex;
       justify-content: space-around;
-      margin: 4em 0;
+      margin: 4em 8em;
 }
 
 .block {
       width: 400px;
       height: 500px;
       background: grey;
+      
+      
       margin: 1em;
+      
+      font-size: 40px;
       filter: grayscale(1);
       opacity: 0.4;
       transition: 1s;
+      
 }
+
+
 
 .block:hover {
       filter: grayscale(0);
