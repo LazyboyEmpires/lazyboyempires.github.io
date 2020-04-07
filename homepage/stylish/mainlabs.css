@@ -23,7 +23,7 @@ html, body {
   }
 }
 
-a {
+.container .row a {
     cursor: url(../image/cursor.png), auto;
     text-decoration: none;
     margin: 4em 8em;
