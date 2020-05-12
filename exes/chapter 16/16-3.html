@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Make a simple form with flexbox</title>
+	<style>
+		 form{
+        display: flex;
+        justify-content: space-around;
+    }
+    input{
+        flex-grow: 1;
+    }
+    #guess {
+    	display: block;
+    }
+	</style>
+</head>
+<body>
+	<form>
+		<h1>Select a value 1 to 10 to guess my number</h1>
+		<select id="guess">
+			<option>0</option>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+			<option>10</option>
+		</select>
+        <button id="demo" type="submit">Guess my number!</button>
+    </form>
+        <p id="gue"></p>
+
+    <script>
+    	var correct = "Yay! You got it";
+    	var wrong = "Nope!Guess again";
+    	document.getElementById("demo").onclick = function() {
+    		var myinput = document.getElementById("in").value;
+    		var numComp = Math.floor(Math.random()*10);
+    		if(myinput == numComp) {
+    			document.getElementById("gue").innerHTML = correct;
+    		} else {
+
+    			document.getElementById("gue").innerHTML = wrong;
+
+    		}
+    	}
+    </script>
+</body>
+</html>

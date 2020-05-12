@@ -1,49 +1,50 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Home Page</title>
-	<link rel="stylesheet" href="1.css">
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="1.css">
 </head>
 <body>
-	<div class="nav-wrapper">
-		<div class="id">
-			<h1>Nguyễn Minh Cường | 1812733</h1>
-		</div>
-		<nav>
-			<a href="pages/mainlabs.html" class="hover-this"><span>Labs</span></a>
-			<a href="../exes/homeexes.html" class="hover-this"><span>Exercises</span></a>
-			<div class="cursor"></div>
-		</nav>
-	</div>
+  <div class="nav-wrapper">
+    <div class="id">
+      <h1>Nguyễn Minh Cường | 1812733</h1>
+    </div>
+    <nav>
+      <a href="pages/mainlabs.html" class="hover-this"><span>Labs</span></a>
+      <a href="../exes/homeexes.html" class="hover-this"><span>Exercises</span></a>
+      <div class="cursor"></div>
+    </nav>
+  </div>
 <script>
-	(function (){
-		const link = document.querySelectorAll('nav > .hover-this');
-		const cursor = document.querySelector('.cursor');
+  (function (){
+    const link = document.querySelectorAll('nav > .hover-this');
+    const cursor = document.querySelector('.cursor');
 
-		const animateit =function(e) {
-			const span = this.querySelector('span');
-			const { offsetX: x, offsetY: y } = e,
-			{ offsetWidth: width, offsetHeight: height } = this,
-			move = 25,
-			xMove = x / width * (move * 2) - move,
-			yMove = y / height * (move * 2) - move;
+    const animateit =function(e) {
+      const span = this.querySelector('span');
+      const { offsetX: x, offsetY: y } = e,
+      { offsetWidth: width, offsetHeight: height } = this,
+      move = 25,
+      xMove = x / width * (move * 2) - move,
+      yMove = y / height * (move * 2) - move;
 
-			span.style.transform = `translate(${xMove}px, ${yMove}px)`; 
-			if (e.type === 'mouseleave') span.style.transform = '';
-		};
+      span.style.transform = `translate(${xMove}px, ${yMove}px)`; 
+      if (e.type === 'mouseleave') span.style.transform = '';
+    };
 
-		const editCursor = e => {
-			const { clientX: x, clientY: y } = e;
-			cursor.style.left = x + 'px';
-			cursor.style.top = y + 'px';
-		};
+    const editCursor = e => {
+      const { clientX: x, clientY: y } = e;
+      cursor.style.left = x + 'px';
+      cursor.style.top = y + 'px';
+    };
 
-		link.forEach(b => b.addEventListener('mousemove', animateit));
-		link.forEach(b => b.addEventListener('mouseleave', animateit));
-		window.addEventListener('mousemove', editCursor);
+    link.forEach(b => b.addEventListener('mousemove', animateit));
+    link.forEach(b => b.addEventListener('mouseleave', animateit));
+    window.addEventListener('mousemove', editCursor);
 
-	})();
+  })();
 </script>
 </body>
 </html>
